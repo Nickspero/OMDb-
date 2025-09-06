@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(236, 235, 235);
+}
+p{
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+/* Top */
+
+.top {
+    width: 100%;
+    height: 35%;
+    position: relative;
+    border: 2px solid black;
+}
+.collage {
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+}
+.top__text {
+    width: 40%;
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFCC00;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0.45);
+}
+.logo__img {
+    width: 10%;
+    position: absolute;
+    top: 2%;
+    left: .5%;
+}
+input{
+    margin: 12px 0px;
+    padding: 8px;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    font-size: 24px;
+    transition: all 300ms ease;
+}
+input:hover {
+    border: 1px solid black;
+}
+a {
+    width: 40px;
+    height: 40px;
+    background-color: #FFCC00;
+    position: absolute;
+    border-radius: 50%;
+    top: 2%;
+    right: 2%;
+}
+.fa-house {
+    padding-top: 7px;
+    padding-left: 8px;
+    color: black;
+    font-size: 24px;
+    transition: all 300ms ease;
+}
+.fa-house:hover {
+    transform: scale(.9);
+}
+.fa-house:active {
+    color: white;
+}
+button {
+    background-color: #FFCC00;
+    width: 40px;
+    height: 40px;
+    border-radius: 16px;
+    border: 1px transparent;
+    position: absolute;
+    right: 3%;
+    top: 55%;
+    transition: all 300ms ease;
+}
+button:hover{
+    border: 1px solid black;
+}
+
+/*Search*/
+
+#search {
+    width: 100vw;
+}
+
+.results {
+    width: 100%;
+    padding: 48px 0px 0px 48px;
+    font-size: 24px;
+}
+
+.container {
+    width: 100%;
+    padding: 0px 64px 64px 64px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.movie__template {
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 64px 64px;
+}
+.movie__poster{
+    width: 100%;
+    transition: all 300ms ease;
+}
+.movie__poster:hover {
+    transform: scale(1.02);
+    cursor: not-allowed;
+}
+.movie__poster--img{
+    width: 100%;
+}
+.movie__title {
+    font-size: 24px;
+    padding: 4px 0px;
+    text-decoration: underline;
+}
+.movie__year {
+    font-size: 24px;
+}
+.movie__category{
+    font-size: 16px;
+}
+.results{
+    letter-spacing: 1.5px;
+}
+
+/*Load state*/
+
+.loading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  font-size: 60px;
+  color: black;
+}
+
+.fa-spinner {
+    animation: spin 600ms infinite linear;
+}
+
+@keyframes spin {
+    0% {
+    transform: rotate(0);}
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color:rgb(59, 59, 59);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 82px 0px;
+}
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.footer__logo--img{
+    width: 20%;
+    height: 20%;
+}
+.copyright{
+    letter-spacing: 1.5px;
+    color: white;
+    padding-top: 24px;
+    font-weight: 100;
+}
+
+@media(max-width:1200px) {
+    button {right: 5%;}
+}
+@media(max-width:1100px) {
+    button{right: 7%;}
+}
+@media (max-width:992px) {
+    button{right: 6%;}
+}
+@media (max-width:780px) {
+    .top__text {font-size: 32px;}
+    input {font-size: 16px;}
+    button {
+        width: 32px;
+        height: 32px;
+        right: 9%;
+        top: 52%;
+    }
+    .movie__template{
+        padding: 24px;
+    }
+}
+@media (max-width:557px) {
+    .top__text {font-size: 24px;}
+    button {
+        right: 11%;
+        top: 49%;
+    }
+    .movie__template{
+        padding: 16px;
+    }
+    .top {
+        height: 25%;
+    }
+    a {
+    width: 32px;
+    height: 32px;
+    }
+    .fa-house{
+    font-size: 16px;
+    }
+}

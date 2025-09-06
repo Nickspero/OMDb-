@@ -3,30 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omdb</title>
+    <title>OMDb</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/90a9fa0a2f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-<nav class="top">
-    <img class="collage" src="./collage__half.JPG" alt="">
-    <a href=""><i class="fa-solid fa-house"></i></a>
-    <figure class="logo">
-        <img class="logo__img" src="./omdb.png" alt="">
-    </figure>
-    <div class="top__text">Browse Titles
-    <input type="text" placeholder="Search" onchange="search(event)">
-    </div>
-</nav>
-
-<section id="search">
-    <div class="results"></div>
-    <div class="container loading">
-        <i class="fa-solid fa-spinner loading__spin"></i>
-    </div>
-</section>
-
-<script src="./index.js" ></script>
+    <img class="bg" src="./collage.jpg" alt="">
+    <img class="logo" src="./omdb.png" alt="">
+    <button onclick="searchPage()">Search Titles</button>
+    <script src="./index.js"></script>
 </body>
 </html>

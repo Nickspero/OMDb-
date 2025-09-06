@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omdb Search Page</title>
+    <link rel="stylesheet" href="./search-style.css">
+    <script src="https://kit.fontawesome.com/90a9fa0a2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div class="top">
+    <img class="collage" src="./collage__half.JPG" alt="">
+    <a href=""><i class="fa-solid fa-house"></i></a>
+    <figure class="logo">
+        <img class="logo__img" src="./omdb.png" alt="">
+    </figure>
+    <div class="top__text">Browse Titles
+    <input type="text" placeholder="Search by Title" onchange="search(event)">
+    <button onchange="search(event)"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+</div>
+
+<section id="search">
+    <div class="results"></div>
+    <div class="container">
+    </div>
+</section>
+
+<footer>
+    <figure class="footer__logo">
+        <img class="footer__logo--img" src="./omdb.png" alt="">
+    </figure>
+    <p class="copyright">OMDb Online Movie Database Copyright &copy; 2025 </p>
+</footer>
+
+<script src="./search-index.js" ></script>
+</body>
+</html>
