@@ -1,4 +1,4 @@
 
 function searchPage(){
-    window.location.href=`${window.location.origin}/search.html`
+    window.location.href=`${window.location.origin}/OMDb-/search.html`
 }
